@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AgriVision - Prediction</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <h1>AgriVision</h1>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="crops.html">Crops</a>
+
+            <a href="prediction.html">Prediction</a>
+
+            <a href="prices.html">Market Prices</a>
+
+            <a href="about.html">About</a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="features">
+
+            <h2>Crop Prediction</h2>
+
+            <p>
+                Enter agricultural information to get a prediction.
+            </p>
+
+
+            <form>
+
+                <label for="crop">Select Crop:</label>
+
+                <select id="crop">
+
+                    <option value="">Select a crop</option>
+
+                    <option value="wheat">Wheat</option>
+
+                    <option value="rice">Rice</option>
+
+                    <option value="soybean">Soybean</option>
+
+                </select>
+
+
+                <br><br>
+
+
+                <label for="area">Select Area:</label>
+
+                <select id="area">
+
+                    <option value="">Select an area</option>
+
+                    <option value="indore">Indore</option>
+
+                    <option value="ujjain">Ujjain</option>
+
+                    <option value="dewas">Dewas</option>
+
+                    <option value="mandsaur">Mandsaur</option>
+
+                </select>
+
+
+                <br><br>
+
+
+                <label for="year">Select Year:</label>
+
+                <select id="year">
+
+                    <option value="">Select year</option>
+
+                    <option value="2022">2022</option>
+
+                    <option value="2023">2023</option>
+
+                    <option value="2024">2024</option>
+
+                    <option value="2025">2025</option>
+
+                </select>
+
+
+                <br><br>
+
+
+                <label for="land">Land Area (hectares):</label>
+
+                <input
+                    type="number"
+                    id="land"
+                    placeholder="Enter land area"
+                >
+
+
+                <br><br>
+
+
+                <button type="button" onclick="predictCrop()">
+                    Predict
+                </button>
+
+            </form>
+
+
+            <div id="result">
+
+                <h3>Prediction Result</h3>
+
+                <p>
+                    Your prediction will appear here.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>© 2026 AgriVision</p>
+
+    </footer>
+
+
+</body>
+
+</html>
